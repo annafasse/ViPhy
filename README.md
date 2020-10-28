@@ -1,8 +1,8 @@
 # ViPhy
-Virus phylogeny system 
+Virus phylogeny system.
 
 ## The script
-The script main.py translate a nucleotide sequence(DNA) into a sequence of amino acids.
+The script ``main.py`` translate a nucleotide sequence(DNA) into a sequence of amino acids.
 
 The steps in the script are the following:
 
