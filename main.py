@@ -115,7 +115,7 @@ def exportFasta(proteinSeq, fastaName):
         fileContent += i
         if (len(fileContent) % 63) == 0:
             fileContent += '\n'
-    fileContent = fastaName + " " + fileContent
+    fileContent = fastaName + '\n' + fileContent
     file.write(fileContent)
     file.close()
 
