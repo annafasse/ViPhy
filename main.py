@@ -109,8 +109,13 @@ def exportFasta(proteinSeq, fastaName):
     proteinSeq: combination of the six possible protein sequences. Obtained from "nucleotideToAminoacid" function
     fastaName: first line from the original fasta file
     """
+    fileContent = ""
     file = open("proteinSeq.fasta", "w")
-    fileContent = fastaName + " " + proteinSeq
+    for i in proteinSeq:
+        fileContent += i
+        if (len(fileContent) % 63) == 0:
+            fileContent += '\n'
+    fileContent = fastaName + " " + fileContent
     file.write(fileContent)
     file.close()
 
